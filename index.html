@@ -1,352 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
-<div class="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.3">
-    <title>✔😊ANEKA CEMILAN ONLINE SHOP😉✔Tante Gini❤! Disukai kalangan Artist, 
-karena enak rasanya! OK Ditunggu ya Kakak pesannya..Terimakasih 😉🙏</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+    <title>✔😊ANEKA CEMILAN ONLINE SHOP😉✔Tante Gini❤! Disukai kalangan Artist,karena enak rasanya! OK Ditunggu ya Kakak pesannya..Terimakasih 😉🙏</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
+
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
+        body {
+            min-width: 1024px;
+            overflow-x: auto;
+        }
+    </style>
+
+<!--Chatbot Modern -->
+    <style>
+        body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        
-        .content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 8px;
+        #chatbot-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
         }
-        h1 {
-            font-size: 3em;
+        #chatbot-btn:hover {
+            background-color: #0056b3;
         }
-        p {
-            font-size: 1.2em;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-    </style>
-
-<style>
-       
-      
-       .text {
-            width: 500px;
-            height: 500px;
-            background: url('') no-repeat center/cover;
-            transform-style: preserve-3d;
-            animation: rotateAnimation 30s linear infinite;
-        }
-      
-       @keyframes rotateAnimation {
-            0% {
-                transform: rotateY(0deg);
-            }
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-    </style>
-
- <script defer src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script defer src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script defer src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        <!-- Sembunyikan scrollbar default-->
-        .scrollbar-hide::-webkit-scrollbar {
+        #chat-container {
             display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
         }
-        .scrollbar-hide {
-            -ms-overflow-style: none;  <!-- IE dan Edge -->
-            scrollbar-width: none;  <!--  Firefox -->
-        }
-    </style>  
-
-<style>
-        
-        @keyframes rotateAnimation {
-            0% {
-                transform: rotateY(0deg);
-            }
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-    </style>
-
-<style>
-        body {
-            display: off;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: white;
-        }
-        .arrow {
-            font-size: 30px;
-            position: absolute;
-            animation: moveUpDown 1s infinite alternate;
-            color: black;
-        }
-        @keyframes moveUpDown {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(20px);
-            }
-        }
-    </style>
-
-<style>
-       body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: off;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-        } 
-        .box {
-            font-size: 20px;
+        .chat-header {
             font-weight: bold;
-            margin: 0px 0;
             text-align: center;
+            margin-bottom: 10px;
         }
-        .marquee-container {
-            width: 150%;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 150px;
+        .chat-body {
+            max-height: 200px;
+            overflow-y: auto;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
         }
-        .marquee {
-            display: flex;
-            animation: marqueeAnimation 40s linear infinite alternate;
-        }
-        .marquee img {
-            width: auto;
-            height: 150px;
-            margin: 0 0px;
-        }
-        .marquee2 {
-            animation: marqueeAnimationReverse 50s linear infinite alternate;
-        }
-        @keyframes marqueeAnimation {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        @keyframes marqueeAnimationReverse {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0); }
-        }
-    </style>
-
-<style>
-
-        }
-        body, html {
-            width: 100%;
-            height: 100%;
-            overflow: off;
-            display: off;
-            justify-content: center;
-            align-items: center;
-            background-color: clear;
-            color: white;
-        }
-        .m-c {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .m-t {
-            font-size: 1.4rem;
-            font-weight: bold;
-            position: absolute;
-            white-space: nowrap;
-            will-change: transform;
-            animation: marquee 70s linear infinite;
-        }
-        @keyframes marquee {
-            from {
-                transform: translateX(100vw);
-            }
-            to {
-                transform: translateX(-100vw);
-            }
-        }
-
-        <!-- Reset dasar -->
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-    .top-text {
-        font-weight: bold;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .middle-text {
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .bottom-text {
-        font-size: 20px;
-        font-style: ();
-    }
-        
-        <!-- Gaya halaman -->
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: off;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        
-        <!-- Kotak responsif -->
-        .box {
-            width: 100%;
-            max-width: 10000px;
-            height: 180px;
-            background: linear-gradient(135deg, #ff7eb3, #ff758c);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            font-size: 1.2rem;
-            color: black;
-            font-weight: bold;
-            padding: 0px;
-            background-color: #f0f0f0;
-            text-align: center;
-            font-family: Arial, sans-serif;
-           flex-direction: column;
-        }
-
-      
-        <!-- Responsif untuk layar kecil -->
-        @media (max-width: 600px) {
-            .box {
-                width: 90%;
-                height: 150px;
-                font-size: 1.2rem;
-            }
-        }
-    </style>
-  
-   <style>
-        :root {
-            --primary-color: #007bff;
-            --bg-color: #f8f9fa;
-            --text-color: #212529;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: var(--bg-color);
-            color: var(--text-color);
-            transition: background 0.3s, color 0.3s;
-        }
-        footer {
-            background: var(--primary-color);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer-container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: white;
-            font-size: 20px;
-        }
-        .subscribe-container {
-            margin-top: 15px;
-        }
-        .subscribe-container input {
-            padding: 10px;
-            border: none;
+        .chat-input {
+            width: calc(100% - 50px);
+            padding: 8px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            width: 250px;
+            margin-top: 10px;
         }
-        .subscribe-container button {
-            padding: 10px 15px;
-            border: none;
-            background: #0056b3;
+        .send-btn {
+            width: 45px;
+            padding: 8px;
+            background-color: #25D366;
             color: white;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
         }
     </style>
+
+
+
 </head>
 
-       <div class="box">
-    <div class="top-text">Aneka Cemilan Online Shop</div>
-    <div class="middle-text">Tante Gini</div>
-    <div class="bottom-text">Marketplace Penyedia Macam2 Cemilan khas Demak, banyak disukai para Artist karena rasanya, yg diracik lansung oleh 
-Ibu Sugini</div><div class="m-c">
-        <div class="m-t">✔😊ANEKA CEMILAN ONLINE SHOP😉✔Tante Gini👍 Menyediakan berbagai macam cemilan khas DEMAK,keripik jangkrik,mendoan saus padang,rempeyek 
-ikan cupang,rengginang lele, dll! 
-Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</div></div></div>
-   
-<body class="bg-gray-100 dark:bg-gray-900">
-    <header class="bg-white dark:bg-gray-800 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <a href="#">
-                    <img src="a.png" alt="Logo" class="h-10"> 
-                </a>
-                
-   
-<div class="container">
-        <div class="image"></div>
-    </div>
 
-    </header> 
+
+<body class="bg-gray-100 text-gray-900">
+    <nav class="bg-blue-600 text-white p-4 flex justify-between items-center shadow-md">
+        <div class="flex items-center">
+            <img src="d.jpg" alt="Logo Toko" class="h-10 w-10 mr-4">
+            <span class="font-bold text-lg">SUGINI Online Shoop</span>
+        </div>
     
+        <ul class="flex space-x-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+   <header class="bg-blue-900 text-white p-6 text-center text-2xl font-bold transition-transform transform hover:scale-105">
+        SELAMAT DATANG !
+
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="bg-white p-6 rounded-lg shadow-md transition-opacity duration-500 hover:opacity-90">
+            <h2 class="text-2xl font-semibold mb-2">ANEKA CEMILAN ONLINE SHOOP</h2>
+            <p class="text-gray-700">Marketplace Penyedia Macam2 Cemilan khas Demak, banyak disukai para Artist karena cita rasanya, yg diracik lansung oleh Ibu Sugini. Kami juga menyediakan berbagai macam cemilan khas DEMAK,keripik jangkrik,mendoan saus padang,rempeyek ikan cupang,rengginang lele, dll. Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</p>
+        </section>
+    </main>
+
+
+<!--DAFTAR PRODUCT-->
 <body class="bg-gray-100">
     <div class="container mx-auto p-5">
-        <h1 class="text-3xl font-bold text-center mb-6">Daftar Produk</h1>
+        <h1 class="text-3xl font-bold text-center mb-6">Daftar Cemilan</h1>
         
         <input type="text" id="search" placeholder="Cari Produk..." 
             class="w-full p-3 mb-4 border rounded-lg" onkeyup="searchProduct()">
@@ -355,21 +127,19 @@ Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</
             <!-- Produk akan dimasukkan dengan JavaScript -->
         </div>
     </div>
-<!--DAFTAR PRODUCT-->
+
     <script>
         const products = [
-            { name: "Laptop koming", price: 15000000, image: "k.jpg" },
-            { name: "Smartphote 5G", price: 8000000, image: "j.jpg" },
-            { name: "Kamera intip", price: 12000000, image: "e.jpg" },
-            { name: "Headphone Aqi2", price: 2000000, image: "d.jpg" },
-            { name: "CANCUT MONYET", price: 15000000, image: "b.jpg" },
-            { name: "SANDAL BAKIA", price: 8000000, image: "i.jpg" },
-            { name: "HP JADUL", price: 12000000, image: "c.jpg" },
-            { name: "SEGO KUCING", price: 2000000, image: "h.jpg" },
-            { name: "TASBIH AJAIB", price: 15000000, image: "g.jpg" },
-            { name: "KUTANG MONYET", price: 8000000, image: "l.jpg" },
-            { name: "TAS ANTI COPET", price: 12000000, image: "f.jpg" },
-            { name: "TOPI MIRING", price: 2000000, image: "a.jpg" },
+            { name: "Keripik Singkong", price: 15000, image: "1.jpg" },
+            { name: "Usus Ayam Balado", price: 8000, image: "2.jpg" },
+            { name: "Comring Bawang", price: 12000, image: "3.jpg" },
+            { name: "Kemplang Palembang", price: 20000, image: "4.jpg" },
+            { name: "Sumpia Isi Abon", price: 17000, image: "5.jpg" },
+            { name: "Jamur Pedas Daun Jeruk", price: 8000, image: "6.jpg" },
+            { name: "Kentang Balado Pedas", price: 13000, image: "7.jpg" },
+            { name: "Keripik Pisang", price: 8000, image: "8.jpg" },
+            { name: "Rengginang Demak", price: 19000, image: "9.jpg" },
+            { name: "Basreng Pedas Gurih", price: 20000, image: "10.jpg" },
         ];
         
         function loadProducts() {
@@ -386,8 +156,6 @@ Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</
                 `;
             });
         }
-
-
 
         function searchProduct() {
             const query = document.getElementById("search").value.toLowerCase();
@@ -410,16 +178,50 @@ Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</
         document.addEventListener("DOMContentLoaded", loadProducts);
     </script>
 
-<h1></h1>
+<!--Chatbot Modern -->
+    <button id="chatbot-btn">Chat With Admin 'Tante GINI'</button>
+    <div id="chat-container">
+        <div class="chat-header">Administrator</div>
+        <div class="chat-body">
+            <p>Halo Kak! Ada yang bisa kami bantu?😊🙏</p>
+        </div>
+        <input type="text" class="chat-input" id="chat-input" placeholder="Ketik pesan...">
+        <button class="send-btn" id="send-btn">OK</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatBtn = document.getElementById('chatbot-btn');
+            const chatContainer = document.getElementById('chat-container');
+            const sendBtn = document.getElementById('send-btn');
+            const chatInput = document.getElementById('chat-input');
+            const phoneNumber = '62895615811794'; // Ganti dengan nomor WhatsApp tujuan
+
+            chatBtn.addEventListener('click', () => {
+                chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
+            });
+
+            sendBtn.addEventListener('click', () => {
+                let message = chatInput.value.trim();
+                if (message !== '') {
+                    let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                }
+            });
+        });
+    </script>
+
+<!--Play Music Otomatis-->
+  <h1></h1>
     <audio id="myAudio" loop>
-        <source src="a.mp3" type="audio/mpeg">
+        <source src="c.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-
+<!--Play Music Otomatis-->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var audio = document.getElementById("myAudio");
-            audio.volume = 0.05; // Mengatur volume awal ke 10%
+            audio.volume = 0.5; // Mengatur volume awal ke 10%
 
             function playAudio() {
                 audio.play().catch(error => {
@@ -427,17 +229,17 @@ Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</
                 });
             }
 
-            <!-- Coba langsung memutar saat halaman dimuat -->
+            // Coba langsung memutar saat halaman dimuat
             playAudio();
 
-           <!--Jika gagal, jalankan saat ada interaksi pengguna-->
+            // Jika gagal, jalankan saat ada interaksi pengguna
             document.addEventListener("click", function() {
                 if (audio.paused) {
                     playAudio();
                 }
             }, { once: true });
 
-            <!-- Atur sensitivitas autoplay berdasarkan visibilitas halaman-->
+            // Atur sensitivitas autoplay berdasarkan visibilitas halaman
             document.addEventListener("visibilitychange", function() {
                 if (document.visibilityState === "visible" && audio.paused) {
                     playAudio();
@@ -447,196 +249,16 @@ Ditunggu Ordernya yeaa Kak, mumpung lgi ada Discount nih..Terimakasih 😉🙏</
             });
         });
     </script>
- 
+
 </body>
 
+   <footer class="text-center py-6 text-gray-600 mt-8 bg-gray-100 rounded-lg shadow-md">
+    <p class="text-xl font-semibold">
+        Happy Shopping! Selamat Berbelanja! Terima kasih 😉🙏
+    </p>
+    <p class="text-sm mt-2">&copy; 2026 <span class="font-bold text-base hover:text-gray-700 transition">RanzDesign</span></p>
+</footer>
 
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-        
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
-
-    <footer>
-<div class="arrow" id="arrow">⬇⬇⬇<div class="container">
-  <div class="text">PESTA DISCOUNT 50%</div></div></div>
-
-
-
-        <div class="footer-container">
-            <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Tentang</a>
-                <a href="#">Layanan</a>
-                <a href="#">Kontak</a>
-            </div>
-
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-bitcoin"></i></a>
-                <a href="#"><i class="fas fa-university"></i></a>
-            </div>
-
-            <div class="subscribe-container">
-                <input type="email" id="email" placeholder="Masukkan email Anda">
-                <button onclick="subscribe()">Berlangganan</button>
-            </div>
-            <p>&copy; 2026 RanzDesign. Hak Cipta Dilindungi Undang2.</p>
-        </div>
-
-
-
-
-    </footer>
-
-    <script>
-        function subscribe() {
-            let email = document.getElementById('email').value;
-            if(email === '' || !email.includes('@')) {
-                alert('Masukkan email yang valid!');
-            } else {
-                alert('Terima kasih telah berlangganan!');
-            }
-        }
- 
 </body>
 
-
-<body class="bg-gray-100">
-    <div id="root"></div>
-    <script type="text/babel">
-        const videos = [
-            {
-                url: "https://www.youtube.com/embed/ZGm_0UOxAtc",
-                title: "Video 1",
-                description: "Berbagai macam koleksi baju hijab terkini.Yang sering dipakai para Artist papan atas."
-            },
-            {
-                url: "https://www.youtube.com/embed/LUKyYDX555I",
-                title: "Video 2",
-                description: "Deskripsi singkat untuk Video 2."
-            },
-            {
-                url: "https://cloud.video.taobao.com/play/u/null/p/1/e/6/t/1/452086892016.mp4 ",
-                title: "Video 3",
-                description: "Deskripsi singkat untuk Video 3."
-            },
-            {
-                url: "https://youtube.com/embed/t2VhqmyP8PU",
-                title: "Video 4",
-                description: "Deskripsi singkat untuk Video 4."
-            },
-            {
-                url: "https://youtube.com/embed/SQPxFZKUIYY",
-                title: "Video 5",
-                description: "Deskripsi singkat untuk Video 5."
-            },
-            {
-                url: "https://youtube.com/embed/UWQVcbVO6nk",
-                title: "Video 6",
-                description: "Deskripsi singkat untuk Video 6."
-            },
-            {
-                url: "https://youtube.com/embed/67GpKlFP838",
-                title: "Video 7",
-                description: "Deskripsi singkat untuk Video 7."
-            },
-            {
-                url: " https://youtube.com/embed/QjK9uwZ-hJo",
-                title: "Video 8",
-                description: "Deskripsi singkat untuk Video 8."
-            },
-            {
-                url: "https://youtube.com/embed/R9K7MMW4l9E",
-                title: "Video 9",
-                description: "Deskripsi singkat untuk Video 9."
-            },
-            {
-                url: " https://www.youtube.com/embed/7D9PRlrWQ2o",
-                title: "Video 10",
-                description: "Deskripsi singkat untuk Video 10."
-            },
-            {
-                url: "https://cvf.shopee.co.id/file/api/v4/11110105/mms/id-11110105-6ke14-m3yn3bvbi0mb82.16000081734593005.mp4",
-                title: "Video 11",
-                description: "Deskripsi singkat untuk Video 11."
-            }
-        ];
-
-        const VideoGallery = () => {
-            const [currentIndex, setCurrentIndex] = React.useState(0);
-
-            const prevVideo = () => {
-                setCurrentIndex((prevIndex) => (prevIndex === 0 ? videos.length - 1 : prevIndex - 1));
-            };
-
-            const nextVideo = () => {
-                setCurrentIndex((prevIndex) => (prevIndex === videos.length - 1 ? 0 : prevIndex + 1));
-            };
-
-            return (
-                <div className="p-4 max-w-4xl mx-auto">
-                    <h2 className="text-2xl font-bold mb-4 text-center">Galeri Video</h2>
-                    <div className="relative">
-                        <iframe
-                            className="w-full h-56 md:h-96 rounded-lg shadow-lg"
-                            src={videos[currentIndex].url}
-                            title={videos[currentIndex].title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                        <div className="mt-2 text-center">
-                            <h3 className="text-xl font-semibold">{videos[currentIndex].title}</h3>
-                            <p className="text-gray-600">{videos[currentIndex].description}</p>
-                        </div>
-                        <button
-                            onClick={prevVideo}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none"
-                        >
-                            &lt;
-                        </button>
-                        <button
-                            onClick={nextVideo}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none"
-                        >
-                            &gt;
-                        </button>
-                    </div>
-                    <div className="flex justify-center mt-4 space-x-2">
-                        {videos.map((_, index) => (
-                            <span
-                                key={index}
-                                className={`cursor-pointer w-3 h-3 rounded-full ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
-                                onClick={() => setCurrentIndex(index)}
-                            ></span>
-                        ))}
-                    </div>
-                </div>
-            );
-        };
-
-        ReactDOM.render(<VideoGallery />, document.getElementById("root"));
-    </script>
-
-    <script>
-        function changeArrowColor(color) {
-            document.getElementById('arrow').style.color = color;
-        }
-        
-        setInterval(() => {
-            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-            changeArrowColor(randomColor);
-        }, 1000);
-    </script>
-  
-</body>
-</div>
 </html>
